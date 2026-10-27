@@ -28,7 +28,7 @@
       { "label": "Get in touch", "href": "#contact", "style": "ghost" }
     ],
     "highlights": [
-      { "value": "10k+", "label": "documents processed by a distributed GenAI pipeline" },
+      { "value": "10k+", "label": "documents a day through a distributed GenAI pipeline" },
       { "value": "250TB+", "label": "banking data migrated to GCP" },
       { "value": "110/110", "label": "cum laude · Politecnico di Milano" }
     ]
@@ -38,7 +38,7 @@
     "label": "About",
     "title": "From raw documents and data to *reliable AI*",
     "paragraphs": [
-      "I'm a Machine Learning Engineer with an MSc in Computer Science & Engineering from Politecnico di Milano (110/110 cum laude). My work sits where models meet infrastructure: I take AI from a notebook to a platform that processes thousands of documents a day, is observable, reproducible and safe to change.",
+      "I'm a Machine Learning Engineer with an MSc in Computer Science & Engineering from Politecnico di Milano (110/110 cum laude). My work sits where models meet infrastructure: I take AI from a notebook to a platform that processes 10,000+ documents a day, is observable, reproducible and safe to change.",
       "At **AXA Italy** I design and build a distributed document-intelligence platform: FastAPI microservices orchestrated with Durable Functions that **classify, extract, summarize and reconcile** insurance documents, a **RAG layer on Elasticsearch**, and the Terraform, CI/CD, Datadog and Databricks/MLflow stack that keeps it running.",
       "Before that I worked on quant data infrastructure at **Intesa Sanpaolo**, AWS ML pipelines at **Data Reply**, and time-series anomaly detection research with **Cisco**."
     ],
@@ -68,7 +68,7 @@
         "org": "AXA Italy",
         "location": "Milan",
         "bullets": [
-          "Designed and built a **distributed document-intelligence platform** processing **10,000+ documents**: Durable Functions orchestration fanning out work across FastAPI microservices.",
+          "Designed and built a **distributed document-intelligence platform** processing **10,000+ documents a day**: Durable Functions orchestration fanning out work across FastAPI microservices.",
           "Developed GenAI services to **classify, extract, summarize and reconcile** policy and claim documents, with Pydantic-validated structured outputs and confidence-based human review.",
           "Built the **RAG layer on Elasticsearch** (BM25 + dense vectors, metadata filters, grounded answers with citations) for complex policy analysis.",
           "Owned the platform around it: **Terraform** IaC, **Jenkins & GitHub Actions** CI/CD, **Docker** images, **Datadog** observability and **Databricks + MLflow** for experiments and evaluation."
@@ -115,9 +115,9 @@
   "caseStudy": {
     "label": "Case study · AXA Italy",
     "title": "A distributed *document-intelligence* platform",
-    "intro": "Insurance runs on documents: policies, claims, contracts, attachments. This platform turns **10,000+ unstructured documents** into data that is classified, structured, summarized, cross-checked and searchable. I designed the architecture and built the core services, the orchestration and the retrieval layer, then took it to production with infrastructure-as-code, automated delivery and end-to-end observability.",
+    "intro": "Insurance runs on documents: policies, claims, contracts, attachments. Every day this platform turns **10,000+ unstructured documents** into data that is classified, structured, summarized, cross-checked and searchable. I designed the architecture and built the core services, the orchestration and the retrieval layer, then took it to production with infrastructure-as-code, automated delivery and end-to-end observability.",
     "metrics": [
-      { "value": "10k+", "label": "documents processed in a distributed way" },
+      { "value": "10k+/day", "label": "documents processed in a distributed way" },
       { "value": "4", "label": "GenAI services: classify · extract · summarize · reconcile" },
       { "value": "Hybrid", "label": "retrieval: BM25 + dense vectors on Elasticsearch" },
       { "value": "100%", "label": "infrastructure in Terraform, shipped through CI/CD" }
@@ -130,7 +130,7 @@
       },
       {
         "title": "Orchestrate",
-        "desc": "A Durable Functions orchestrator fans out one workflow per document, checkpoints state, retries failed steps and fans results back in. Thousands of documents run in parallel without losing progress."
+        "desc": "A Durable Functions orchestrator fans out one workflow per document, checkpoints state, retries failed steps and fans results back in. Thousands of documents a day run in parallel without losing progress."
       },
       {
         "title": "Parse & chunk",
