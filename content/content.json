@@ -1,0 +1,331 @@
+{
+  "meta": {
+    "name": "Lorenzo Tenenti",
+    "role": "Machine Learning Engineer",
+    "location": "Milan, Italy",
+    "email": "lorenzo.tenenti@gmail.com",
+    "phone": "+39 334 132 1536",
+    "linkedin": "https://www.linkedin.com/in/lorenzo-tenenti-6a68389a/",
+    "github": "https://github.com/Tenenti-lorenzo",
+    "availability": "Open to opportunities"
+  },
+
+  "nav": [
+    { "id": "about", "label": "About" },
+    { "id": "experience", "label": "Experience" },
+    { "id": "axa", "label": "AXA platform" },
+    { "id": "projects", "label": "Projects" },
+    { "id": "education", "label": "Education" },
+    { "id": "contact", "label": "Contact" }
+  ],
+
+  "hero": {
+    "eyebrow": "ML Engineer & GenAI · Milan",
+    "nameLines": ["Lorenzo", "Tenenti"],
+    "tagline": "I build **AI systems that run in production**: distributed document-intelligence pipelines, RAG on Elasticsearch, GenAI microservices and data platforms, with the infrastructure, observability and delivery around them.",
+    "ctas": [
+      { "label": "See the AXA platform", "href": "#axa", "style": "primary" },
+      { "label": "Get in touch", "href": "#contact", "style": "ghost" }
+    ],
+    "highlights": [
+      { "value": "10k+", "label": "documents processed by a distributed GenAI pipeline" },
+      { "value": "250TB+", "label": "banking data migrated to GCP" },
+      { "value": "110/110", "label": "cum laude · Politecnico di Milano" }
+    ]
+  },
+
+  "about": {
+    "label": "About",
+    "title": "From raw documents and data to *reliable AI*",
+    "paragraphs": [
+      "I'm a Machine Learning Engineer with an MSc in Computer Science & Engineering from Politecnico di Milano (110/110 cum laude). My work sits where models meet infrastructure: I take AI from a notebook to a platform that processes thousands of documents a day, is observable, reproducible and safe to change.",
+      "At **AXA Italy** I design and build a distributed document-intelligence platform: FastAPI microservices orchestrated with Durable Functions that **classify, extract, summarize and reconcile** insurance documents, a **RAG layer on Elasticsearch**, and the Terraform, CI/CD, Datadog and Databricks/MLflow stack that keeps it running.",
+      "Before that I worked on quant data infrastructure at **Intesa Sanpaolo**, AWS ML pipelines at **Data Reply**, and time-series anomaly detection research with **Cisco**."
+    ],
+    "skills": [
+      {
+        "group": "GenAI & ML",
+        "items": ["RAG", "LLM pipelines", "Elasticsearch (hybrid search)", "LangChain", "LlamaIndex", "Qdrant", "FAISS", "Hugging Face", "PyTorch", "TensorFlow", "Scikit-learn", "Time series", "Anomaly detection"]
+      },
+      {
+        "group": "Backend & distributed systems",
+        "items": ["Python", "FastAPI", "Pydantic", "Durable Functions", "Event-driven design", "PySpark", "Kafka", "SQL", "Docker"]
+      },
+      {
+        "group": "Platform, MLOps & cloud",
+        "items": ["Databricks", "MLflow", "Datadog", "Terraform", "Jenkins", "GitHub Actions", "Bitbucket", "AWS (Lambda, SageMaker, Step Functions)", "GCP (Cloud Storage, Dataproc, BigQuery, Vertex AI)", "uv", "pytest"]
+      }
+    ]
+  },
+
+  "experience": {
+    "label": "Experience",
+    "title": "Professional *history*",
+    "items": [
+      {
+        "period": "Jun 2025 — Present",
+        "role": "Machine Learning Engineer & GenAI",
+        "org": "AXA Italy",
+        "location": "Milan",
+        "bullets": [
+          "Designed and built a **distributed document-intelligence platform** processing **10,000+ documents**: Durable Functions orchestration fanning out work across FastAPI microservices.",
+          "Developed GenAI services to **classify, extract, summarize and reconcile** policy and claim documents, with Pydantic-validated structured outputs and confidence-based human review.",
+          "Built the **RAG layer on Elasticsearch** (BM25 + dense vectors, metadata filters, grounded answers with citations) for complex policy analysis.",
+          "Owned the platform around it: **Terraform** IaC, **Jenkins & GitHub Actions** CI/CD, **Docker** images, **Datadog** observability and **Databricks + MLflow** for experiments and evaluation."
+        ],
+        "link": { "label": "Read the full case study", "href": "#axa" }
+      },
+      {
+        "period": "Mar 2024 — May 2025",
+        "role": "Big Data Engineer — Quant Infrastructure",
+        "org": "Intesa Sanpaolo",
+        "location": "Milan",
+        "bullets": [
+          "Joined in-house from Data Reply to continue the **250TB+** banking data migration to GCP, owning the **data-ingestion software**: a configurable PySpark engine supporting multiple load strategies (**SCD Type 2**, snapshot, incremental/append and more).",
+          "Automated ingestion setup: table configurations written in **Excel or plain natural language** are turned automatically into validated **JSON configuration files**, replacing slow, error-prone manual work.",
+          "Built a **clustering-based model** that fingerprints Spark workloads and picks the optimal **Dataproc** configuration for each job, improving cluster resilience and cost efficiency.",
+          "Optimized Spark transformations through **vectorization** (Pandas UDFs / Arrow): **25% shorter** processing time.",
+          "Stack: GCP (Cloud Storage, Dataproc, BigQuery, Vertex AI), PySpark, Bitbucket CI."
+        ]
+      },
+      {
+        "period": "Oct 2022 — Mar 2024",
+        "role": "Big Data & Machine Learning Engineer",
+        "org": "Data Reply",
+        "location": "Milan",
+        "bullets": [
+          "Automated inference pipelines for refund-request classification on SageMaker and Spark, delivered with Terraform and Jenkins CI/CD.",
+          "Designed event-driven architectures with AWS Lambda and Step Functions for reliable, auditable workflows.",
+          "As a consultant for **Intesa Sanpaolo**, started the **250TB+** banking data migration (Teradata / Hadoop → GCP) and the ingestion engine behind it, then joined the client in-house to carry it forward."
+        ]
+      },
+      {
+        "period": "Oct 2022 — Oct 2023",
+        "role": "Research Engineer — Time Series Analysis",
+        "org": "Cisco Systems (thesis collaboration)",
+        "location": "Milan",
+        "bullets": [
+          "Built a multivariate anomaly-detection system reaching a **90% detection rate** with controlled false negatives; presented to Cisco R&D.",
+          "Developed a change-detection algorithm for high-frequency telecom streams, handling non-stationarity with Statsmodels and TensorFlow."
+        ]
+      }
+    ]
+  },
+
+  "caseStudy": {
+    "label": "Case study · AXA Italy",
+    "title": "A distributed *document-intelligence* platform",
+    "intro": "Insurance runs on documents: policies, claims, contracts, attachments. This platform turns **10,000+ unstructured documents** into data that is classified, structured, summarized, cross-checked and searchable. I designed the architecture and built the core services, the orchestration and the retrieval layer, then took it to production with infrastructure-as-code, automated delivery and end-to-end observability.",
+    "metrics": [
+      { "value": "10k+", "label": "documents processed in a distributed way" },
+      { "value": "4", "label": "GenAI services: classify · extract · summarize · reconcile" },
+      { "value": "Hybrid", "label": "retrieval: BM25 + dense vectors on Elasticsearch" },
+      { "value": "100%", "label": "infrastructure in Terraform, shipped through CI/CD" }
+    ],
+    "pipelineTitle": "How a document flows through the system",
+    "pipeline": [
+      {
+        "title": "Ingest",
+        "desc": "Documents land in storage and get a tracked job. Ingestion is idempotent, so a document can be reprocessed safely without duplicates."
+      },
+      {
+        "title": "Orchestrate",
+        "desc": "A Durable Functions orchestrator fans out one workflow per document, checkpoints state, retries failed steps and fans results back in. Thousands of documents run in parallel without losing progress."
+      },
+      {
+        "title": "Parse & chunk",
+        "desc": "Text and layout extraction, layout-aware chunking and metadata enrichment (type, business line, dates) to prepare content for both the AI services and retrieval."
+      },
+      {
+        "title": "Classify · Extract · Summarize",
+        "desc": "Each step is a FastAPI microservice called by the orchestrator. Outputs are validated against Pydantic schemas before moving on."
+      },
+      {
+        "title": "Reconcile",
+        "desc": "Extracted fields are matched across related documents and against reference data. Mismatches become explicit, auditable findings."
+      },
+      {
+        "title": "Index & answer",
+        "desc": "Chunks and embeddings are indexed in Elasticsearch; the RAG API answers questions grounded in the sources, with citations."
+      }
+    ],
+    "servicesTitle": "The AI services",
+    "services": [
+      {
+        "name": "Classification",
+        "desc": "Assigns document type and business line so each document follows the right path.",
+        "details": ["LLM with rule-based guards", "Confidence score on every label", "Low confidence → human review queue"]
+      },
+      {
+        "name": "Extraction",
+        "desc": "Schema-driven extraction of the fields that matter: policy numbers, parties, dates, coverages, amounts.",
+        "details": ["Structured output validated with Pydantic", "One schema per document type", "Field-level provenance back to the source"]
+      },
+      {
+        "name": "Summarization",
+        "desc": "Concise summaries of long documents for operators and downstream processes.",
+        "details": ["Map-reduce over long documents", "Context-window budgeting", "Consistent, templated formats"]
+      },
+      {
+        "name": "Reconciliation",
+        "desc": "Cross-checks what was extracted across documents and source systems to surface inconsistencies.",
+        "details": ["Entity matching across documents", "Rules + LLM for ambiguous cases", "Auditable report per case"]
+      }
+    ],
+    "ragTitle": "RAG on Elasticsearch",
+    "rag": [
+      "**Hybrid retrieval**: BM25 for exact terms (policy codes, clause names) combined with dense kNN vectors for meaning, with fused ranking.",
+      "**Metadata filters** (document type, business line, date) to scope every query to the right subset of the corpus.",
+      "**Chunking tuned for long policy documents** and context-window optimization, so the model sees the relevant clauses and nothing more.",
+      "**Grounded answers with citations**, evaluated on curated question sets tracked in MLflow."
+    ],
+    "platformTitle": "Platform & operations",
+    "platform": [
+      {
+        "area": "Services & orchestration",
+        "tools": ["FastAPI", "Durable Functions", "Docker"],
+        "desc": "Stateless containerized microservices, coordinated by durable orchestrations with retries and checkpointing."
+      },
+      {
+        "area": "Data & ML lifecycle",
+        "tools": ["Databricks", "MLflow"],
+        "desc": "Large-scale data preparation on Databricks; MLflow for experiment tracking, model and prompt versioning and evaluation runs."
+      },
+      {
+        "area": "Observability",
+        "tools": ["Datadog"],
+        "desc": "Distributed traces across services, structured logs, dashboards on throughput, latency and errors, and alerting."
+      },
+      {
+        "area": "Infrastructure as code",
+        "tools": ["Terraform"],
+        "desc": "Every environment is reproducible from code: services, search cluster, storage, networking and monitoring."
+      },
+      {
+        "area": "CI/CD",
+        "tools": ["Jenkins", "GitHub Actions"],
+        "desc": "Lint, type-check and tests on every change; image build and promotion through environments."
+      },
+      {
+        "area": "Engineering quality",
+        "tools": ["Pydantic", "pytest", "ruff", "mypy"],
+        "desc": "Typed contracts between every component, tests on the critical paths, and structured logging everywhere."
+      }
+    ]
+  },
+
+  "projects": {
+    "label": "Projects",
+    "title": "Open source & *selected work*",
+    "githubTitle": "On GitHub",
+    "githubIntro": "Personal projects I build in the open, mostly around RAG, data and full-stack ML.",
+    "github": [
+      {
+        "name": "investment_monitoring",
+        "url": "https://github.com/Tenenti-lorenzo/investment_monitoring",
+        "tag": "Full-stack · AWS serverless",
+        "title": "PortfolioLab — portfolio analytics dashboard",
+        "desc": "A FastAPI backend and web frontend for analysing an investment portfolio: ISIN resolution via OpenFIGI, market data from Yahoo Finance, portfolio metrics, ETF look-through and geographic exposure, bond analysis, superinvestor tracking and LLM-assisted deep analysis of documents.",
+        "highlights": ["Lambda container (Mangum) behind API Gateway + CloudFront", "DynamoDB, S3, ECR and Secrets Manager — all in Terraform", "JWT auth, pytest suite with offline guard, uv"],
+        "tech": ["FastAPI", "Pydantic", "AWS Lambda", "Terraform", "DynamoDB", "Docker", "Claude API"],
+        "featured": true
+      },
+      {
+        "name": "Rag-multi-provider",
+        "url": "https://github.com/Tenenti-lorenzo/Rag-multi-provider",
+        "tag": "RAG · Retrieval precision",
+        "title": "High-precision RAG for 100k+ similar documents",
+        "desc": "A retrieval pipeline built for the hardest case: very long, near-duplicate documents. It deduplicates, chunks hierarchically, searches two ways and reranks before the LLM sees anything.",
+        "highlights": ["MinHash LSH deduplication", "3-level hierarchical chunking (2048 / 512 / 128 tokens) with parent walk-up", "Dense (bge-large on Qdrant) + BM25, Reciprocal Rank Fusion, cross-encoder reranking", "Pluggable LLM providers (OpenAI or local Ollama)"],
+        "tech": ["LlamaIndex", "Qdrant", "BM25", "Hugging Face", "uv", "MkDocs"],
+        "featured": true
+      },
+      {
+        "name": "Chat_RAG",
+        "url": "https://github.com/Tenenti-lorenzo/Chat_RAG",
+        "tag": "Web app · RAG",
+        "title": "Chat with your files",
+        "desc": "A Django web app where users upload documents, which are embedded into a FAISS index and queried through a chat interface backed by OpenAI models.",
+        "tech": ["Django", "FAISS", "OpenAI", "PostgreSQL"]
+      },
+      {
+        "name": "RecSys",
+        "url": "https://github.com/Tenenti-lorenzo/RecSys",
+        "tag": "Recommender systems · Polimi",
+        "title": "Recommender systems challenge",
+        "desc": "Work for the Polimi Recommender Systems challenge: collaborative and content-based models (SLIM, matrix factorization, IALS, RP3beta), hybrid ensembles and Bayesian hyperparameter search, run as multi-threaded experiments.",
+        "tech": ["Python", "Cython", "SciPy", "scikit-optimize"]
+      },
+      {
+        "name": "F1_talk",
+        "url": "https://github.com/Tenenti-lorenzo/F1_talk",
+        "tag": "Data analysis",
+        "title": "Formula 1 race stats",
+        "desc": "Notebooks exploring driver and team performance across seasons, with visual summaries of race results and trends.",
+        "tech": ["Pandas", "Matplotlib", "Jupyter"]
+      }
+    ],
+    "workTitle": "Selected work",
+    "work": [
+      {
+        "tag": "Freelance",
+        "title": "RAG application for public tenders",
+        "desc": "Semantic-search agent that retrieves and synthesizes tender documents, on FAISS with evaluated third-party model integrations. Deployed to production.",
+        "tech": ["LangChain", "FAISS", "Hugging Face"]
+      },
+      {
+        "tag": "Intesa Sanpaolo",
+        "title": "Config-driven ingestion for a 250TB migration",
+        "desc": "PySpark ingestion engine with SCD2, snapshot and incremental strategies; configs generated from Excel or natural language into JSON; clustering to choose Dataproc configurations; vectorized Spark functions for 25% faster runs.",
+        "tech": ["PySpark", "Dataproc", "Scikit-learn", "Vertex AI"]
+      },
+      {
+        "tag": "Thesis · Cisco",
+        "title": "Multivariate anomaly detection in telecom",
+        "desc": "Change detection on high-frequency telecom streams with non-stationarity handling; 90% detection rate.",
+        "tech": ["TensorFlow", "Statsmodels", "SciPy"]
+      },
+      {
+        "tag": "Academic",
+        "title": "Deep learning for multivariate forecasting",
+        "desc": "RNN and Seq2Seq models with attention forecasting seven multivariate time series, with stationarity checks and feature engineering.",
+        "tech": ["TensorFlow", "Keras"]
+      }
+    ]
+  },
+
+  "education": {
+    "label": "Education",
+    "title": "Academic *background*",
+    "degrees": [
+      {
+        "badge": "MSc",
+        "degree": "Computer Science & Engineering",
+        "school": "Politecnico di Milano",
+        "period": "Mar 2021 – Oct 2023",
+        "grade": "110/110 cum laude · GPA 28.55",
+        "detail": "Data Mining, Deep Learning, Recommender Systems, Streaming Data Analytics. Thesis: time-series anomaly detection in telecommunications, with Cisco."
+      },
+      {
+        "badge": "BSc",
+        "degree": "Computer Engineering",
+        "school": "University of Bologna — Alma Mater Studiorum",
+        "period": "Sep 2017 – Oct 2020",
+        "grade": "110/110 cum laude · GPA 28.07"
+      }
+    ],
+    "certifications": [
+      "AWS Certified Machine Learning – Specialty",
+      "TOEIC — Full Professional Proficiency (English)"
+    ]
+  },
+
+  "contact": {
+    "label": "Contact",
+    "title": "Let's *talk*",
+    "intro": "Open to roles and consulting in ML engineering, GenAI platforms and data infrastructure. Based in Milan, happy to work remotely across Europe.",
+    "formNote": "Sending opens your email app with the message ready to go."
+  },
+
+  "footer": "Designed & built by Lorenzo Tenenti"
+}

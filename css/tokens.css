@@ -1,0 +1,41 @@
+/* Design tokens: colors, type, spacing. Change the look from here. */
+:root {
+  /* Surfaces */
+  --paper: #F6F3EE;
+  --paper-alt: #EFEAE2;
+  --card: #FFFDF9;
+  --line: #E3DCD1;
+  --line-strong: #CFC5B6;
+
+  /* Text */
+  --ink: #1D1C19;
+  --ink-soft: #46433C;
+  --muted: #7B766C;
+
+  /* Accents */
+  --accent: #2E5E52;
+  --accent-ink: #234A40;
+  --accent-soft: #E2EBE6;
+  --brass: #A97E3F;
+  --brass-soft: #F3EADB;
+
+  /* Type */
+  --serif: 'Fraunces', Georgia, 'Times New Roman', serif;
+  --sans: 'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, monospace;
+
+  /* Shape & depth */
+  --radius-sm: 8px;
+  --radius: 14px;
+  --radius-lg: 22px;
+  --shadow-sm: 0 1px 2px rgba(29, 28, 25, .05);
+  --shadow: 0 1px 2px rgba(29, 28, 25, .04), 0 10px 30px -12px rgba(29, 28, 25, .14);
+
+  /* Layout */
+  --maxw: 1120px;
+  --gutter: clamp(16px, 4vw, 40px);
+  --section-y: clamp(72px, 10vw, 128px);
+  --header-h: 68px;
+
+  --ease: cubic-bezier(.2, .7, .2, 1);
+}
